@@ -9,11 +9,19 @@ import { Product } from '../shared/product.model';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  product:Product[] = {
-    name: "太郎",
-    price: 500,
-    description: "ああああ",
-  };
+  products:Product = [
+    {
+      name: "太郎",
+      price: 500,
+      description: "ああああ",
+    },
+    {
+    name: "次郎",
+    price: 100,
+    description: "あああ"
+    }
+  ]
+
 
   share() {
     window.alert('The product has been shared!');
