@@ -9,7 +9,11 @@ import { Product } from '../shared/product.model';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  product: Product = products;
+  product: Product = {
+    name: '太郎',
+    price: 100,
+    description: '詳細~~~~',
+  };
 
   share() {
     window.alert('The product has been shared!');
